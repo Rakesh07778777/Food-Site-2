@@ -175,29 +175,39 @@ p, a, li, input, button {
 .bottom-nav ul{
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 1.4rem;
 }
 
-nav ul li{
-    list-style: none;
-    text-transform: uppercase;
-    font-size: var(--fs-xs);
-    transition: all 0.2s ease;
+nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  background-color: #e6e6e6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 18px;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: var(--text-seconday);
-    font-weight: 300;
-    font-size: var(--fs-xs);
-    transition: all 0.2s ease;
+nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: var(--fs-xs);
+  color: inherit; /* Important: makes link color follow li */
+  transition: all 0.2s ease;
 }
 
-nav ul li:hover a{
-    color: #111;
-    font-weight: 400;
+/* When li is hovered, also change the a tag color */
+nav ul li:hover{
+  color: #fff;
+  background-color: #212121;
 }
 
+
+
+nav ul a:hover{
+  color: #e6e6e6;
+}
 
 ul h2{
     font-size: var(--fs-m);
