@@ -481,7 +481,7 @@ ul h2{
     justify-content: center;
     gap: 2rem;
     height: 60vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .card{
@@ -510,4 +510,125 @@ ul h2{
 
 .like h6{
     font-weight: 300;
+}
+
+
+.section-video {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 70vh;
+
+  overflow: hidden;
+}
+
+/* Left Section */
+.left-section-container {
+  width: 45%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-xl);
+  border-radius: 4px;
+  box-shadow: var(--shadow-lg-light);
+  background: #e3e3e3;
+}
+
+/* Video Section */
+.section-video video {
+  width: 55%;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+  background-color: #000; 
+}
+
+/* Extra styling */
+.left-section-container .section-prices {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 1vw;
+}
+
+.left-section-container .section-prices p {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.left-section-container h1 {
+  font-size: 3vw;
+  line-height: 3vw;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.left-section-container > p {
+  color: var(--text-muted);
+  line-height: var(--fs-s);
+  font-size: var(--fs-xs);
+  margin-top: var(--margin-m);
+}
+
+.section-date {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--margin-s);
+  margin-top: var(--margin-m);
+  width: 100%;
+  padding: 0 var(--padding-xl);
+  align-items: center;
+}
+
+.section-date-txt {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-date img {
+  height: 38px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.section-date-txt p:nth-child(1) {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  line-height: var(--fs-s);
+}
+
+.section-date-txt p:nth-child(2) {
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: var(--fs-s);
+}
+
+.section-share-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.section-share-icon h4 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.section-share-icon i {
+  background-color: #e6e6e6;
+  padding: var(--padding-s);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-share-icon i:hover {
+  transform: translateX(0) scale(1.1);
 }
