@@ -6,6 +6,10 @@
 }
 
 :root{
+
+    --color-bronze: #F7E6D0 ;
+    --bronze-text : #8C4D2F;
+    --bronze-text-second :#C8743E ;
     --fs-s: 16px;
     --fs-xs:14px;
     --fs-m: 24px;
