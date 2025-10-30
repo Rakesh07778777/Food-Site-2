@@ -273,7 +273,6 @@ ul h2{
     display: flex;
     flex-direction: column;
     padding: var(--padding-xl);
-    background-color: white;
     border-radius: 4px;
     box-shadow: var(--shadow-lg-light) ;
 }
@@ -422,44 +421,28 @@ ul h2{
 
 
 .recipe-section{
-    padding:  var(--padding-xl);
+    padding:  var(--padding-xxl) 0;
     background: var(--bg-primary);
+    border: 2px solid yellow;
+    min-height: 70vh;
+    height: 60vh;
 }
 
 .card-container{
-    display: grid;
-    gap: 32px;
-    grid-template-columns: 
-    repeat(auto-fit, minmax(min(300px, 60%), 1fr ));
+    display: flex;
     justify-content: center;
+    gap: 2rem;
+    height: 60vh;
 }
 
-
-.card1{
+.card{
     height: 100%;
-}
-.card2{
-    background-color: white;
-    height: 100%;
-
-
-}
-.card3{
-    background-color: white;
-    height: 100%;
-    
-
-}
-.card4{
-    background-color: white;
-    height: 100%;
-
 
 }
 
 .card img{
     width: 100%;
-    height: 50%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -470,3 +453,4 @@ ul h2{
     font-size: var(--fs-xs);
 
 }
+
