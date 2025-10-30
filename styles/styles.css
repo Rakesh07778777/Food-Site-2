@@ -423,7 +423,6 @@ ul h2{
 .recipe-section{
     padding:  var(--padding-xxl) 0;
     background: var(--bg-primary);
-    border: 2px solid yellow;
     min-height: 70vh;
     height: 60vh;
 }
@@ -433,6 +432,7 @@ ul h2{
     justify-content: center;
     gap: 2rem;
     height: 60vh;
+    border: 2px solid red;
 }
 
 .card{
@@ -454,3 +454,11 @@ ul h2{
 
 }
 
+.like{
+    display: flex;
+    gap: 0.6rem;
+}
+
+.like h6{
+    font-weight: 300;
+}
