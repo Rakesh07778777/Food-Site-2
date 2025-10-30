@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +31,19 @@
     --margin-xl: 40px;
     --margin-xxl: 48px;
     --line-height: 14px;
+
+    /* box shadows */
+
+      --shadow-sm-light: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md-light: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg-light: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-xl-light: 0 6px 20px rgba(0, 0, 0, 0.18);
+  --shadow-inner-light: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
 }
 
 html, 
@@ -38,7 +52,18 @@ body{
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-heading);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+p, a, li, input, button {
+  font-family: var(--font-body);
+  color: var(--text-seconday);
 }
 
 #header{
@@ -124,6 +149,7 @@ body{
     font-size: var(--fs-s);
     color: var(--text-seconday);
     padding: 0 var(--padding-l);
+    font-weight: 500;
 }
 .wishlits h4:nth-child(1){
     border-right: 0.5px solid grey;
@@ -200,6 +226,7 @@ ul h2{
     padding: var(--padding-xl);
     background-color: white;
     border-radius: 4px;
+    box-shadow: var(--shadow-lg-light) ;
 }
 
 .left-container .prices{
@@ -280,7 +307,6 @@ ul h2{
     align-items: center;
     height: 66px;
     margin-top: 66px;
-    border: 2px solid red;
 }
 .bottom-center{
     width: 100%;
