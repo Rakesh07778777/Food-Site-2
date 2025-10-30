@@ -149,10 +149,17 @@ p, a, li, input, button {
     font-size: var(--fs-s);
     color: var(--text-seconday);
     padding: 0 var(--padding-l);
-    font-weight: 500;
+    font-weight: 300;
+    transition: all 0.2s ease;
 }
 .wishlits h4:nth-child(1){
     border-right: 0.5px solid grey;
+}
+
+.wishlits h4:hover{
+    color: #111;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .bottom-nav{
@@ -175,6 +182,7 @@ nav ul li{
     list-style: none;
     text-transform: uppercase;
     font-size: var(--fs-xs);
+    transition: all 0.2s ease;
 }
 
 nav ul li a{
@@ -182,7 +190,14 @@ nav ul li a{
     color: var(--text-seconday);
     font-weight: 300;
     font-size: var(--fs-xs);
+    transition: all 0.2s ease;
 }
+
+nav ul li:hover a{
+    color: #111;
+    font-weight: 400;
+}
+
 
 ul h2{
     font-size: var(--fs-m);
@@ -290,14 +305,30 @@ ul h2{
     color: var(--text-muted);
     line-height: var(--fs-s);
 }
-.date .share-icon{
-    display: flex;
-    gap: 16px;
+.share-icon {
+  display: flex;
+  gap: 10px;
 }
-.share-icon i{
-    background-color: #e6e6e6;
-    padding: var(--padding-s);
-    border-radius: 50%;
+
+.share-icon h4 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.share-icon i {
+  background-color: #e6e6e6;
+  padding: var(--padding-s);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-icon i:hover {
+  transform: translateX(0) scale(1.1);
+
 }
 
 .bottom-container{
